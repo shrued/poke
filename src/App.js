@@ -10,7 +10,7 @@ export default class App extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://pokeapi.co/api/v2/pokemon?limit=151")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
       .then((res) => res.json())
       .then((response) => {
         this.setState({
